@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="algoithms.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.html">About</a></li>
+                    <li><a href="algorithms.html">Algorithms</a></li>
+                    <li><a href="aes-en.html">AES Enc</a></li>
+                    <li><a href="aes-dec.html">AES Dec</a></li>
+                    <li><a href="des-en.html">DES Enc</a></li>
+                    <li><a href="des-dec.html">DES Dec</a></li>
+                    <li><a href="sha-256.html">SHA-256</a></li>
+                    <li><i class="fa-regular fa-sun"></i></li>
+                </ul>
+            </nav>
+
+            <div class="algorithm-section">
+                <h1>Select an <br><span>Algorithm</span></h1>
+
+                <div class="algorithm-container">
+                    <div class="algorithm-row">
+                        <!-- AES Section -->
+                        <div class="algorithm-box">
+                            <h2>AES</h2>
+                            <div class="algorithm-buttons">
+                                <button onclick="location.href='aes-en.html'">Encryption</button>
+                                <button onclick="location.href='aes-dec.html'">Decryption</button>
+                            </div>
+                        </div>
+
+                        <!-- DES Section -->
+                        <div class="algorithm-box">
+                            <h2>DES</h2>
+                            <div class="algorithm-buttons">
+                                <button onclick="location.href='des-en.html'">Encryption</button>
+                                <button onclick="location.href='des-dec.html'">Decryption</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SHA-256 Section -->
+                    <div class="sha-box">
+                        <button onclick="location.href='sha-256.html'">SHA-256 (Generate the hash value)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Encryption</title>
+    <link rel="stylesheet" href="aes-styles.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="home.html">About</a></li>
+                        <li><a href="algorithms.html">Algorithms</a></li>
+                        <li><a href="aes-en.html">AES Enc</a></li>
+                        <li><a href="aes-dec.html">AES Dec</a></li>
+                        <li><a href="des-en.html">DES Enc</a></li>
+                        <li><a href="des-dec.html">DES Dec</a></li>
+                        <li><a href="sha-256.html">SHA-256</a></li>
+                </ul>
+               
+            </nav>
+
+            <div class="aes-section">
+                <h1> <br><span>SHA-256</span></h1>
+
+                <div class="encryption-box">
+                    <label for="plain-text">Plain text</label>
+                    <input type="text" id="plain-text" placeholder="Enter plain text">
+                    <button class="generate-btn" onclick="hashSHA256()">Generate Hash Value</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

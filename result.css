@@ -1,0 +1,155 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgba(19, 19, 17, 1);
+    color: #fff;
+}
+
+/* Video Background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vdh;
+    height: 100vdh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 60px;
+}
+
+/* Container */
+.container {
+    padding: 10px 10%;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(78, 78, 78, 1);
+    padding: 10px 10%;
+    z-index: 1000;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.logo {
+    width: 110px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 60px;
+    margin-top: 7px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #958547;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Result Section */
+.aes-section {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 450px;
+}
+
+.aes-section h1 {
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.aes-section span {
+    background-image: linear-gradient(to right, #958547, #DD181B);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Result Box */
+.encryption-box {
+    background: #ffffff;
+    margin-top: 5px;
+    padding: 50px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Output Box Styled Similar to Input Fields */
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: lighter;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: #ffffff;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    height: 100px;
+}
